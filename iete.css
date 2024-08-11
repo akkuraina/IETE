@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #08030d56;
+    color: #721b92;
+}
+
+header {
+    background-color: #110818;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(131, 46, 137);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.welcome {
+    background-color: #9b70bc;
+    color: rgb(15, 1, 1);
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cta-button {
+    background-color: #14051c;
+    color: rgb(216, 129, 242);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.feature {
+    width: 30%;
+    background-color: rgb(16, 8, 20);
+    color: #c58def;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(173, 116, 244, 0.1);
+}
+
+footer {
+    background-color: #0e0713;
+    color: rgb(185, 128, 225);
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 10px; color: #9b70bc;
+}
+.aboutus, .schedule, .register, .contactus {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    border-radius: 10px;
+    border: 1px solid #180426;
+    padding: 20px 10px;
+}
+
+form input[type="submit"] {
+    background-color: #a651e7;
+    color: rgb(6, 2, 10);
+    padding: 20px 10px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
