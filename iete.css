@@ -4,23 +4,39 @@ body {
     padding: 0;
     background-color: #08030d56;
     color: #721b92;
+    max-width: 100%;
+}
+
+.video{
+    max-width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(118, 12, 160, 0.3),rgba(12,3,51,0.3));
+    position: relative;
+    display: flexbox;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: center;
+    z-index: -5;
 }
 
 header {
     background-color: #110818;
     padding: 20px;
     text-align: center;
+    z-index: -5;
+    max-width: 100%;
 }
 
 .logo {
     max-width: 100%;
     height: auto;
+    z-index: 0;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0%;
 }
 
 nav ul li {
@@ -69,14 +85,15 @@ nav ul li a {
 }
 
 footer {
-    background-color: #0e0713;
-    color: rgb(185, 128, 225);
+    background-color: #0d0611;
+    color: rgb(229, 218, 237);
     text-align: center;
     padding: 5px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    border: 10px; color: #9b70bc;
+    border-top: 1%; color: #ebd9f8;
+    
 }
 .aboutus, .schedule, .register, .contactus {
     padding: 20px;
@@ -87,22 +104,42 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 10px;
+    padding: 50px 10px;
+    width: 30%;
+    text-align: center;
+    margin-left: 34%;
 }
 
 form input[type="text"], form input[type="email"], form textarea {
     border-radius: 10px;
     border: 1px solid #180426;
-    padding: 10px 30px;
-    display: flex;
+    padding: 20px 50px;
 }
 
 form input[type="submit"] {
     background-color: #a651e7;
     color: rgb(6, 2, 10);
     padding: 20px 10px;
-    border: none;
-    border-radius: 1px;
+    border: 1px solid #180426;
+    border-radius: 10px;
     cursor: pointer;
-    display: flex;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-aspect-ratio: 16/10){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/10){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
 }
